@@ -1,0 +1,10 @@
+.idea/
+*.iml
+
+target/
+out/
+
+*.bkp
+*.seeta
+
+.DS_Store
