@@ -1,6 +1,6 @@
 package com.seeta.coursera.week1;
 
-public class Example {
+public class CallingKotlin {
     public static void main(String[] args) {
         //Calling kotlin code from Java
         Tutorail.main(args);

@@ -4,32 +4,11 @@
 @file: JvmName("Tutorail")
 package com.seeta.coursera.week1
 
+import com.seeta.coursera.week3.show
+
 fun main(args: Array<String>) {
     val name = if (args.isEmpty()) "World" else args[0]
     println("Hello $name!")
-
-    // collections
-    val list = listOf(1, 2, 3, 4, 5)
-    println(list.map { s ->
-        s + 2
-    }.sum())
-
-    println("\n\nList for in example:")
-    // iterate over list
-    for (i in list) {
-        print(i)
-    }
-
-    println("\n\nList foreach example:")
-    list.forEach { i ->
-        print(i)
-    }
-
-
-    print("\n\nList with index example: ")
-    for ((index, element) in list.withIndex()) {
-        print("($index -> $element) ")
-    }
 
     print("\n\nRange example: ")
     (1..9).forEach {
@@ -63,4 +42,13 @@ fun main(args: Array<String>) {
         print("($key, $value) ")
     }
 
+    displaySeparator(character = '5')
+
 }
+
+fun displaySeparator(character: Char = '*', size: Int = 10) {
+    repeat(size) {
+        print(character)
+    }
+}
+
