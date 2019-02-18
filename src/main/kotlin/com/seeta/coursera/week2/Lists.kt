@@ -1,4 +1,4 @@
-package com.seeta.coursera.week1
+package com.seeta.coursera.week2
 
 fun main(args: Array<String>) {
     // collections

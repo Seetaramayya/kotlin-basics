@@ -1,5 +1,5 @@
 @file: JvmName("Extensions")
-package com.seeta.coursera.week1
+package com.seeta.coursera.week2
 
 @JvmOverloads
 fun <A> List<A>.mkString(prefix: String = "", delimiter: String = "", postfix: String = "") = joinToString(prefix, delimiter, postfix)

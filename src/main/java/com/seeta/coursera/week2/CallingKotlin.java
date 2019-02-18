@@ -1,4 +1,4 @@
-package com.seeta.coursera.week1;
+package com.seeta.coursera.week2;
 
 public class CallingKotlin {
     public static void main(String[] args) {

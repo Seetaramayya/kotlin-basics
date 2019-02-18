@@ -2,9 +2,7 @@
 // This `JvmName.function`.
 
 @file: JvmName("Tutorail")
-package com.seeta.coursera.week1
-
-import com.seeta.coursera.week3.show
+package com.seeta.coursera.week2
 
 fun main(args: Array<String>) {
     val name = if (args.isEmpty()) "World" else args[0]

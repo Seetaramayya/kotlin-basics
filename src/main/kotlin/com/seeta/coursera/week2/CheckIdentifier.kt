@@ -1,4 +1,4 @@
-package com.seeta.coursera.week1
+package com.seeta.coursera.week2
 
 fun isValidIdentifier(s: String): Boolean =
     s.isNotEmpty() && s.matches("[A-Za-z_][a-zA-Z0-9_]*".toRegex())

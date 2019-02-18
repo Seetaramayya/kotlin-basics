@@ -1,4 +1,4 @@
-package com.seeta.coursera.week1;
+package com.seeta.coursera.week2;
 
 import kotlin.collections.CollectionsKt;
 import org.junit.Test;
