@@ -64,4 +64,29 @@
   - `lateinit` are supported
     - can not be `val`
     - 
+    
+### OOP
+
+- Either `interface` or `class` is inherited with `:`
+- `constructors` are inline to class declaration. If there is a definition of that can go to `init` section
+- `data` classes are like `case` classes in scala
+- `sealed` classes are supported in kotlin
+- `class deligation` is supported in kotlin. 
+  ```
+  interface A {
+    fun a()
+  }
+  interface B {
+    fun b()
+  }
   
+  // no need to call those methods explicitly
+  class Seeta(a: A, b: B) : A by a, B by b {
+  }
+  ```
+  
+- `companion` is supported in kotlin
+- `object expression` is possible. creating anonymous classes. I could not see real use case of this unless design is wrong
+- `@JvmStatic` annotation is needs to put to access from java classes
+- `const` is to declare constants. Why not `val`. I really did not like this
+- `operator` overloading is possible in kotlin for fixed list of operators

@@ -19,3 +19,34 @@ fun <A,B> List<Pair<A, B>>.toPair(): Pair<List<A>, List<B>> {
 }
 
 fun <T> List<T>.tail() = drop(1)
+
+//TODO reverse?
+fun <T : Any> List<T?>.merge(f: (T) -> T): List<T> = foldRight(mutableListOf()) { maybeElement, acc ->
+    println(maybeElement)
+    maybeElement?.let {element ->
+        println(element)
+        val maybeFirst = acc.firstOrNull()
+        println(maybeFirst)
+
+        acc += if (maybeFirst != null && maybeFirst == element) {
+            f(element)
+        } else {
+            element
+        }
+//        maybeFirst?.let { previous -> if (previous == element) f(element) else element }
+    }
+
+    acc
+}
+
+fun <T : Any> List<T?>.merge2(f: (T) -> T): List<T> = fold(mutableListOf()) { acc, maybeElement ->
+    maybeElement?.let { element ->
+        val maybeFirst = acc.lastOrNull()
+        if (maybeFirst != null && maybeFirst == element) {
+            acc[acc.size - 1] = f(element)
+        } else {
+            acc += element
+        }
+    }
+    acc
+}
